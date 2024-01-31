@@ -1,0 +1,6 @@
+.primBG {
+    -fx-background-color: #212229
+}
+.button:hover{
+    -fx-background-color: white;
+}
