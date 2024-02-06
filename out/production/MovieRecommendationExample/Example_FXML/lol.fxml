@@ -78,42 +78,82 @@
                         </VBox>
                         <VBox prefHeight="116.0" prefWidth="170.0" spacing="20.0">
                            <children>
-                              <Label text="Social" textFill="#9a9a9a" />
-                              <Button alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefWidth="178.0" styleClass="coolBTN" stylesheets="@mian.css" text="Friends" textFill="#9a9a9a">
+                              <Label text="Social" textFill="#9a9a9a">
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefWidth="168.0" styleClass="coolBTN" stylesheets="@mian.css" textFill="#9a9a9a">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
                                  <graphic>
-                                    <FontAwesomeIconView fill="WHITE" glyphName="USER" />
+                                    <HBox alignment="CENTER_LEFT" prefWidth="168.0" spacing="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="USER" />
+                                          <Label text="Friends" textFill="#9a9a9a" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="30.0" />
+                                       </padding>
+                                    </HBox>
                                  </graphic>
                               </Button>
-                              <Button alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefWidth="178.0" styleClass="coolBTN" stylesheets="@mian.css" text="Parties" textFill="#9a9a9a">
+                              <Button alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefWidth="168.0" styleClass="coolBTN" stylesheets="@mian.css" textFill="#9a9a9a">
                                  <graphic>
-                                    <FontAwesomeIconView fill="WHITE" glyphName="USERS" />
+                                    <HBox alignment="CENTER_LEFT" prefWidth="168.0" spacing="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="USERS" />
+                                          <Label text="Parties" textFill="#9a9a9a" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="30.0" />
+                                       </padding>
+                                    </HBox>
                                  </graphic>
                               </Button>
                            </children>
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
-                           <padding>
-                              <Insets left="30.0" />
-                           </padding>
                         </VBox>
-                        <VBox prefHeight="123.0" prefWidth="170.0" spacing="20.0">
+                        <VBox layoutX="10.0" layoutY="214.0" prefHeight="116.0" prefWidth="170.0" spacing="20.0">
                            <children>
-                              <Label text="General" textFill="#9a9a9a" />
-                              <Button alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefWidth="178.0" styleClass="coolBTN" stylesheets="@mian.css" text="Settings" textFill="#9a9a9a">
+                              <Label text="General" textFill="#9a9a9a">
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefWidth="168.0" styleClass="coolBTN" stylesheets="@mian.css" textFill="#9a9a9a">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
                                  <graphic>
-                                    <FontAwesomeIconView fill="WHITE" glyphName="GEAR" />
+                                    <HBox alignment="CENTER_LEFT" prefWidth="168.0" spacing="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="GEAR" />
+                                          <Label text="Settings" textFill="#9a9a9a" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="30.0" />
+                                       </padding>
+                                    </HBox>
                                  </graphic>
                               </Button>
-                              <Button alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefWidth="178.0" styleClass="coolBTN" stylesheets="@mian.css" text="Log out" textFill="#9a9a9a">
+                              <Button alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefWidth="168.0" styleClass="coolBTN" stylesheets="@mian.css" textFill="#9a9a9a">
                                  <graphic>
-                                    <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" />
+                                    <HBox alignment="CENTER_LEFT" prefWidth="168.0" spacing="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" />
+                                          <Label text="Log out" textFill="#9a9a9a" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="30.0" />
+                                       </padding>
+                                    </HBox>
                                  </graphic>
                               </Button>
                            </children>
-                           <padding>
-                              <Insets left="30.0" />
-                           </padding>
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>

@@ -4,20 +4,20 @@
 
 .coolBTN {
     -fx-background-color: #212229;
-    -fx-padding: 10;
+    -fx-padding: 4px;
 
+    /* Top, Right, Bottom, Left */
     -fx-border-width: 0 0 0 3px;
     -fx-border-color: #212229;
     -fx-border-style: solid;
 }
 
-.Add30 {
- -fx-padding: 10px;
+.loginBG {
+    -fx-background-image: url("loginBG.jpg");
 }
 
 .coolBTN:hover{
     /* Top, Right, Bottom, Left */
-
     -fx-border-width: 0 0 0 3px;
     -fx-border-color: #e70000;
     -fx-border-style: solid;
