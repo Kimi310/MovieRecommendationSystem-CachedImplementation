@@ -6,6 +6,11 @@
     -fx-background-color: #212229
 }
 
+.noBorder {
+
+    -fx-border-image-width: 0;
+}
+
 .coolBTN {
     -fx-background-color: #212229;
     -fx-padding: 4px;

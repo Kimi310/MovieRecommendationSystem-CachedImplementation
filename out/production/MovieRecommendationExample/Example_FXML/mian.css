@@ -1,5 +1,14 @@
+.text-white {
+    -fx-text-fill: white;
+}
+
 .primBG {
     -fx-background-color: #212229
+}
+
+.noBorder {
+
+    -fx-border-image-width: 0;
 }
 
 .coolBTN {
@@ -14,6 +23,13 @@
 
 .loginBG {
     -fx-background-image: url("loginBG.jpg");
+    -fx-background-image: cover;
+    -fx-background-repeat: none;
+    -fx-background-position: center;
+}
+
+.backgroundEffect {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
 }
 
 .coolBTN:hover{
