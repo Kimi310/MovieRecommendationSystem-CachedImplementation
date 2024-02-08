@@ -23,7 +23,6 @@
 
 .loginBG {
     -fx-background-image: url("loginBG.jpg");
-    -fx-background-image: cover;
     -fx-background-repeat: none;
     -fx-background-position: center;
 }

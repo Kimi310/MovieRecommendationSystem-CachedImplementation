@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="768.0" prefWidth="1024.0" styleClass="primBG" stylesheets="@mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Example_FXML.LolController">
+<BorderPane fx:id="borderPane" minWidth="940.0" prefHeight="768.0" prefWidth="1024.0" styleClass="primBG" stylesheets="@mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Example_FXML.LolController">
    <left>
       <VBox alignment="CENTER" prefHeight="668.0" prefWidth="180.0" spacing="10.0" styleClass="primBG" BorderPane.alignment="CENTER">
          <children>
@@ -228,7 +228,7 @@
    <top>
       <HBox prefHeight="100.0" prefWidth="540.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="619.0" HBox.hgrow="ALWAYS">
+            <HBox fx:id="hboxBigScreen" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="619.0" HBox.hgrow="ALWAYS">
                <children>
                   <Label text="NETFLIX" textFill="WHITE">
                      <font>
@@ -238,7 +238,7 @@
                         <Insets />
                      </HBox.margin>
                   </Label>
-                  <Button mnemonicParsing="false" styleClass="coolArrows">
+                  <Button fx:id="arrowLeft" mnemonicParsing="false" styleClass="coolArrows">
                      <graphic>
                         <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" />
                      </graphic>
@@ -246,7 +246,7 @@
                         <Insets left="30.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" styleClass="coolArrows">
+                  <Button fx:id="arrowRight" mnemonicParsing="false" styleClass="coolArrows">
                      <graphic>
                         <FontAwesomeIconView fill="WHITE" glyphName="ARROW_RIGHT" />
                      </graphic>
@@ -254,19 +254,25 @@
                         <Insets />
                      </HBox.margin>
                   </Button>
-                  <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="18" wrappingWidth="19.942845344543457">
+                  <FontAwesomeIconView fx:id="searchIcon" fill="WHITE" glyphName="SEARCH" size="18" wrappingWidth="19.942845344543457">
                      <HBox.margin>
                         <Insets left="40.0" right="5.0" />
                      </HBox.margin>
                   </FontAwesomeIconView>
-                  <TextField prefHeight="26.0" prefWidth="276.0" promptText="Search..." styleClass="searchBar">
+                  <TextField fx:id="serachbar" prefHeight="26.0" prefWidth="276.0" promptText="Search..." styleClass="searchBar">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
                   </TextField>
                </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
             </HBox>
-            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="386.0" HBox.hgrow="ALWAYS">
+            <HBox fx:id="hboxUser" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="386.0" HBox.hgrow="ALWAYS">
                <children>
                   <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -287,9 +293,6 @@
                </padding>
             </HBox>
          </children>
-         <padding>
-            <Insets left="20.0" />
-         </padding>
       </HBox>
    </top>
 </BorderPane>
