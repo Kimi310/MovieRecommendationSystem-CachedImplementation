@@ -18,7 +18,7 @@
    <left>
       <VBox alignment="CENTER" prefHeight="668.0" prefWidth="180.0" spacing="10.0" styleClass="primBG" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="668.0" prefWidth="200.0" styleClass="primBG">
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="668.0" prefWidth="200.0" styleClass="primBG" vbarPolicy="NEVER">
                <content>
                   <VBox prefHeight="200.0" prefWidth="100.0">
                      <children>
@@ -172,48 +172,63 @@
       </VBox>
    </left>
    <center>
-      <VBox prefHeight="719.0" prefWidth="836.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="678.0" prefWidth="844.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="260.0" prefWidth="828.0">
-               <children>
-                  <ImageView fitHeight="260.0" fitWidth="828.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../Desktop/movie/Zrzut%20ekranu%202024-02-7%20o%2010.56.34.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                  </ImageView>
-               </children>
-               <VBox.margin>
-                  <Insets bottom="5.0" />
-               </VBox.margin></HBox>
-            <Label layoutX="10.0" layoutY="585.0" text="Watch again" textFill="#9a9a9a">
-               <font>
-                  <Font name="Avenir Black" size="15.0" />
-               </font>
-            </Label>
-            <HBox prefHeight="130.0" prefWidth="828.0" style="-fx-background-color: lightyellow;">
-               <VBox.margin>
-                  <Insets bottom="15.0" />
-               </VBox.margin></HBox>
-            <Label text="Friends" textFill="#9a9a9a" />
-            <HBox layoutX="10.0" layoutY="270.0" prefHeight="130.0" prefWidth="828.0" style="-fx-background-color: lightpink;">
-               <VBox.margin>
-                  <Insets bottom="15.0" />
-               </VBox.margin></HBox>
-            <Label layoutX="10.0" layoutY="430.0" text="Friends" textFill="#9a9a9a" />
-            <HBox layoutX="10.0" layoutY="400.0" prefHeight="130.0" prefWidth="828.0" style="-fx-background-color: lightgreen;" />
+            <ScrollPane hbarPolicy="NEVER" maxWidth="-Infinity" prefHeight="666.0" prefWidth="844.0" styleClass="primBG" vbarPolicy="NEVER">
+               <content>
+                  <VBox prefHeight="666.0" prefWidth="842.0" styleClass="primBG">
+                     <children>
+                        <HBox prefHeight="238.0" prefWidth="842.0">
+                           <children>
+                              <ImageView fitHeight="226.0" fitWidth="828.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Desktop/movie/Zrzut%20ekranu%202024-02-7%20o%2010.56.34.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="Friends" textFill="#9a9a9a" />
+                        <HBox prefHeight="130.0" prefWidth="828.0" style="-fx-background-color: lightyellow;">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="Friends" textFill="#9a9a9a" />
+                        <HBox prefHeight="130.0" prefWidth="828.0" style="-fx-background-color: lightpink;">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="Watch again" textFill="#9a9a9a">
+                           <font>
+                              <Font name="Avenir Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="130.0" prefWidth="828.0" style="-fx-background-color: lightgreen;" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
          </children>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
+         <styleClass>
+            <String fx:value="primBG" />
+            <String fx:value="noBorder" />
+         </styleClass>
       </VBox>
    </center>
    <top>
       <HBox prefHeight="100.0" prefWidth="540.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="619.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="619.0" HBox.hgrow="ALWAYS">
                <children>
                   <Label text="NETFLIX" textFill="WHITE">
                      <font>
