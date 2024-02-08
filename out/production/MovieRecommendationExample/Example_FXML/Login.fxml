@@ -1,11 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="754.0" prefWidth="1035.0" stylesheets="@mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="1024.0" spacing="50.0" styleClass="loginBG" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" spacing="50.0" styleClass="backgroundEffect" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="1066.0" styleClass="text-white" text="Sign In">
+                     <font>
+                        <Font name="Arial" size="43.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <TextField prefHeight="80.0" prefWidth="400.0" promptText="Username">
+                           <styleClass>
+                              <String fx:value="primBG" />
+                              <String fx:value="text-white" />
+                           </styleClass>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="533.0" layoutY="97.0" prefHeight="80.0" prefWidth="400.0" promptText="Password">
+                           <styleClass>
+                              <String fx:value="primBG" />
+                              <String fx:value="text-white" />
+                           </styleClass>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" style="-fx-background-radius: 25;" text="Login">
+                           <styleClass>
+                              <String fx:value="text-white" />
+                              <String fx:value="primBG" />
+                           </styleClass>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="15.0" left="50.0" right="50.0" top="15.0" />
+                           </padding>
+                        </Button>
+                        <Button mnemonicParsing="false" style="-fx-background-radius: 25;" text="Signup">
+                           <styleClass>
+                              <String fx:value="text-white" />
+                              <String fx:value="primBG" />
+                           </styleClass>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="15.0" left="50.0" right="50.0" top="15.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></VBox>
    </center>
 </BorderPane>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -19,7 +20,7 @@
          <children>
             <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="668.0" prefWidth="200.0" styleClass="primBG">
                <content>
-                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="primBG">
+                  <VBox prefHeight="200.0" prefWidth="100.0">
                      <children>
                         <VBox prefHeight="164.0" prefWidth="170.0" spacing="20.0">
                            <children>
@@ -157,6 +158,10 @@
                            </VBox.margin>
                         </VBox>
                      </children>
+                     <styleClass>
+                        <String fx:value="primBG" />
+                        <String fx:value="noBorder" />
+                     </styleClass>
                   </VBox>
                </content>
                <padding>
