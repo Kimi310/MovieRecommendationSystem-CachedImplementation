@@ -27,6 +27,12 @@
     -fx-background-position: center;
 }
 
+.titleBG {
+    -fx-background-image: url("Oppeheimer.jpg");
+    -fx-background-repeat: none;
+    -fx-background-position: center;
+}
+
 .backgroundEffect {
     -fx-background-color: rgba(0, 0, 0, 0.5);
 }
