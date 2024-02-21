@@ -1,0 +1,65 @@
+.text-white {
+    -fx-text-fill: white;
+}
+
+.primBG {
+    -fx-background-color: #212229
+}
+
+.noBorder {
+
+    -fx-border-image-width: 0;
+}
+
+.coolBTN {
+    -fx-background-color: #212229;
+    -fx-padding: 4px;
+
+    /* Top, Right, Bottom, Left */
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-color: #212229;
+    -fx-border-style: solid;
+}
+
+.loginBG {
+    -fx-background-image: url("../../../../Example_FXML/loginBG.jpg");
+    -fx-background-repeat: none;
+    -fx-background-position: center;
+}
+
+.titleBG {
+    -fx-background-image: url("../../../../Example_FXML/Oppeheimer.jpg");
+    -fx-background-repeat: none;
+    -fx-background-position: center;
+}
+
+.backgroundEffect {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+.coolBTN:hover{
+    /* Top, Right, Bottom, Left */
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-color: #e70000;
+    -fx-border-style: solid;
+}
+
+.searchBar{
+    -fx-background-color: #212229;
+    -fx-border-color: white;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.image{
+    -fx-border-radius: 20px;
+}
+.coolArrows{
+    -fx-background-color: #212229;
+    -fx-padding: 4px;
+
+    /* Top, Right, Bottom, Left */
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-color: #212229;
+    -fx-border-style: solid;
+}
