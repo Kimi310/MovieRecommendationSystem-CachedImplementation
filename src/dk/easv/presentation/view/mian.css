@@ -22,7 +22,13 @@
 }
 
 .loginBG {
-    -fx-background-image: url("loginBG.jpg");
+    -fx-background-image: url("../../../../Example_FXML/loginBG.jpg");
+    -fx-background-repeat: none;
+    -fx-background-position: center;
+}
+
+.titleBG {
+    -fx-background-image: url("../../../../Example_FXML/Oppeheimer.jpg");
     -fx-background-repeat: none;
     -fx-background-position: center;
 }

@@ -18,12 +18,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LogInController implements Initializable {
-    @FXML private PasswordField passwordField;
+    @FXML private TextField passwordField;
     @FXML private TextField userId;
     private AppModel model;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        userId.setText("Souichi Kieras");
         model = new AppModel();
     }
 
