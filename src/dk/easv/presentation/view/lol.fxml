@@ -11,10 +11,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" minWidth="940.0" prefHeight="837.0" prefWidth="1155.0" styleClass="primBG" stylesheets="@../dk/easv/presentation/view/mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Example_FXML.LolController">
+<BorderPane fx:id="borderPane" minWidth="940.0" prefHeight="837.0" prefWidth="1155.0" styleClass="primBG" stylesheets="@mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.presentation.controller.AppController">
    <left>
       <VBox alignment="CENTER" prefHeight="668.0" prefWidth="180.0" spacing="10.0" styleClass="primBG" BorderPane.alignment="CENTER">
          <children>
@@ -172,25 +173,36 @@
       </VBox>
    </left>
    <center>
-      <VBox prefHeight="678.0" styleClass="primBG" BorderPane.alignment="CENTER">
+      <VBox prefHeight="738.0" prefWidth="1066.0" styleClass="primBG" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxWidth="-Infinity" prefHeight="737.0" prefWidth="Infinity" styleClass="primBG" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxWidth="-Infinity" prefHeight="968.0" prefWidth="935.0" styleClass="primBG" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
                <content>
-                  <VBox prefHeight="666.0" styleClass="primBG">
+                  <VBox prefHeight="939.0" prefWidth="1086.0" styleClass="primBG">
                      <children>
                         <HBox prefHeight="238.0" styleClass="titleBG" VBox.vgrow="ALWAYS">
                            <VBox.margin>
                               <Insets bottom="5.0" />
                            </VBox.margin>
                         </HBox>
-                        <Label text="Friends" textFill="#9a9a9a" VBox.vgrow="ALWAYS" />
-                        <HBox prefHeight="130.0" style="-fx-background-color: lightyellow;" VBox.vgrow="ALWAYS">
+                        <Label text="Top Rated Movies" textFill="#9a9a9a" VBox.vgrow="ALWAYS" />
+                        <HBox maxHeight="126.0" prefHeight="126.0" prefWidth="934.0" spacing="10.0" VBox.vgrow="ALWAYS">
                            <VBox.margin>
                               <Insets bottom="15.0" />
                            </VBox.margin>
+                           <children>
+                              <VBox fx:id="topRatedMovie1" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="TitleTopRated1" text="Title" textFill="WHITE" visible="false" />
+                                    <Label text="2005" textFill="WHITE" visible="false" />
+                                    <Label text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                              <Pane fx:id="topRatedMovie3" prefHeight="126.0" prefWidth="224.0" />
+                              <Pane fx:id="topRatedMovie4" prefHeight="126.0" prefWidth="224.0" />
+                           </children>
                         </HBox>
                         <Label text="Friends" textFill="#9a9a9a" VBox.vgrow="ALWAYS" />
-                        <HBox prefHeight="130.0" style="-fx-background-color: lightpink;" VBox.vgrow="ALWAYS">
+                        <HBox maxHeight="126.0" prefHeight="126.0" style="-fx-background-color: lightpink;" VBox.vgrow="ALWAYS">
                            <VBox.margin>
                               <Insets bottom="15.0" />
                            </VBox.margin>
@@ -265,7 +277,7 @@
                <children>
                   <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@deafult_user.jpg" />
+                        <Image url="@../../../../Example_FXML/deafult_user.jpg" />
                      </image>
                   </ImageView>
                   <Label prefHeight="18.0" prefWidth="96.0" text="Some username" textFill="#9a9a9a">

@@ -33,14 +33,14 @@ public class LogInController implements Initializable {
         model.loginUserFromUsername(userId.getText());
         if(model.getObsLoggedInUser()!=null){
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/dk/easv/presentation/view/App.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/dk/easv/presentation/view/lol.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.setTitle("Movie Recommendation System 0.01 Beta");
             stage.show();
             AppController controller = loader.getController();
-
+            model.loadData(model.obsLoggedInUserProperty().get());
             controller.setModel(model);
 
 

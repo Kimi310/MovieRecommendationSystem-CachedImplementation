@@ -45,7 +45,7 @@ public class DataAccessManager {
             List<String> movieLines = Files.readAllLines(Path.of("data/movie_titles.txt"));
             for (String movieLine : movieLines) {
                 String[] split = movieLine.split(",");
-                Movie movie = new Movie(Integer.parseInt(split[0]), split[2], Integer.parseInt(split[1]));
+                Movie movie = new Movie(Integer.parseInt(split[0]), split[2], Integer.parseInt(split[1]),null);
                 movies.put(movie.getId(), movie);
             }
         } catch (IOException e) {
