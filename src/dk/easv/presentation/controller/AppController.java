@@ -259,6 +259,10 @@ public class AppController implements Initializable {
         }
     }
 
+    public void setUserPics(){
+
+    }
+
     public void changeBGMovie(MouseEvent mouseEvent) {
         VBox box = (VBox) mouseEvent.getSource();
         box.setBackground(placeholderBg);
