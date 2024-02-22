@@ -368,7 +368,7 @@
                <children>
                   <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                        <Image url="@../../../../Example_FXML/masteruser.png" />
                      </image>
                   </ImageView>
                   <Label fx:id="userLabel" prefHeight="18.0" prefWidth="96.0" text="Some username" textFill="#9a9a9a">
@@ -406,7 +406,7 @@
                            <children>
                               <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                    <Image url="@../../../../Example_FXML/user2.png" />
                                  </image>
                               </ImageView>
                               <Label fx:id="similarUser1" text="Label" textFill="#9a9a9a">
@@ -420,7 +420,7 @@
                            <children>
                               <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                    <Image url="@../../../../Example_FXML/user3.png" />
                                  </image>
                               </ImageView>
                               <Label fx:id="similarUser2" text="Label" textFill="#9a9a9a">
@@ -434,7 +434,7 @@
                            <children>
                               <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                    <Image url="@../../../../Example_FXML/user4.png" />
                                  </image>
                               </ImageView>
                               <Label fx:id="similarUser3" text="Label" textFill="#9a9a9a">
@@ -448,7 +448,7 @@
                            <children>
                               <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                    <Image url="@../../../../Example_FXML/user5.png" />
                                  </image>
                               </ImageView>
                               <Label fx:id="similarUser4" text="Label" textFill="#9a9a9a">
@@ -462,7 +462,7 @@
                            <children>
                               <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                    <Image url="@../../../../Example_FXML/user6.png" />
                                  </image>
                               </ImageView>
                               <Label fx:id="similarUser5" text="Label" textFill="#9a9a9a">
@@ -476,7 +476,7 @@
                            <children>
                               <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                    <Image url="@../../../../Example_FXML/user1.png" />
                                  </image>
                               </ImageView>
                               <Label fx:id="similarUser6" text="Label" textFill="#9a9a9a">
