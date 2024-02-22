@@ -16,7 +16,7 @@
 
 <BorderPane fx:id="borderPane" minWidth="940.0" prefHeight="837.0" prefWidth="1343.0" styleClass="primBG" stylesheets="@mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.presentation.controller.AppController">
    <left>
-      <VBox alignment="CENTER" prefHeight="668.0" prefWidth="180.0" styleClass="primBG" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" prefHeight="668.0" prefWidth="180.0" styleClass="primBG" BorderPane.alignment="CENTER">
          <children>
             <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="739.0" prefWidth="180.0" styleClass="primBG" vbarPolicy="NEVER">
                <content>
