@@ -97,7 +97,7 @@ public class LogicManager {
                     }
                 }
                 if(!found){
-                    TopMovie tm = new TopMovie(m);
+                    TopMovie tm = new TopMovie(m,null);
                     tm.getRawRatings().add(rating);
                     favorites.add(tm);
                 }

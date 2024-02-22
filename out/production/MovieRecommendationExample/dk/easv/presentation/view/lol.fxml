@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" minWidth="940.0" prefHeight="837.0" prefWidth="1155.0" styleClass="primBG" stylesheets="@mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.presentation.controller.AppController">
+<BorderPane fx:id="borderPane" minWidth="940.0" prefHeight="837.0" prefWidth="1343.0" styleClass="primBG" stylesheets="@mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.presentation.controller.AppController">
    <left>
       <VBox alignment="CENTER" prefHeight="668.0" prefWidth="180.0" styleClass="primBG" BorderPane.alignment="CENTER">
          <children>
@@ -173,13 +173,13 @@
       </VBox>
    </left>
    <center>
-      <VBox prefHeight="738.0" prefWidth="1066.0" styleClass="primBG" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="738.0" prefWidth="974.0" styleClass="primBG" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxWidth="-Infinity" prefHeight="968.0" prefWidth="935.0" styleClass="primBG" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxWidth="-Infinity" prefHeight="738.0" prefWidth="925.0" styleClass="primBG" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
                <content>
-                  <VBox prefHeight="939.0" prefWidth="1086.0" styleClass="primBG">
+                  <VBox prefHeight="842.0" prefWidth="1080.0" styleClass="primBG">
                      <children>
-                        <HBox prefHeight="238.0" styleClass="titleBG" VBox.vgrow="ALWAYS">
+                        <HBox maxHeight="238.0" prefHeight="238.0" styleClass="titleBG" VBox.vgrow="ALWAYS">
                            <VBox.margin>
                               <Insets bottom="5.0" />
                            </VBox.margin>
@@ -196,51 +196,117 @@
                               <Insets bottom="15.0" />
                            </VBox.margin>
                            <children>
-                              <VBox fx:id="topRatedMovie1" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0" styleClass="movieBoxes">
+                              <VBox fx:id="topRatedMovie1" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
                                  <children>
                                     <Label fx:id="TitleTopRated1" text="Title" textFill="WHITE" visible="false" />
-                                    <Label text="2005" textFill="WHITE" visible="false" />
-                                    <Label text="3.4" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearTopRated1" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingTopRated1" text="3.4" textFill="WHITE" visible="false" />
                                  </children>
                               </VBox>
-                              <VBox fx:id="topRatedMovie2" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0" styleClass="movieBoxes">
+                              <VBox fx:id="topRatedMovie2" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
                                  <children>
-                                    <Label fx:id="TitleTopRated11" text="Title" textFill="WHITE" visible="false" />
-                                    <Label text="2005" textFill="WHITE" visible="false" />
-                                    <Label text="3.4" textFill="WHITE" visible="false" />
+                                    <Label fx:id="TitleTopRated2" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearTopRated2" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingTopRated2" text="3.4" textFill="WHITE" visible="false" />
                                  </children>
                               </VBox>
-                              <VBox fx:id="topRatedMovie3" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0" styleClass="movieBoxes">
+                              <VBox fx:id="topRatedMovie3" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
                                  <children>
-                                    <Label fx:id="TitleTopRated12" text="Title" textFill="WHITE" visible="false" />
-                                    <Label text="2005" textFill="WHITE" visible="false" />
-                                    <Label text="3.4" textFill="WHITE" visible="false" />
+                                    <Label fx:id="TitleTopRated3" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearTopRated3" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingTopRated3" text="3.4" textFill="WHITE" visible="false" />
                                  </children>
                               </VBox>
-                              <VBox fx:id="topRatedMovie4" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0" styleClass="movieBoxes">
+                              <VBox fx:id="topRatedMovie4" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
                                  <children>
-                                    <Label fx:id="TitleTopRated13" text="Title" textFill="WHITE" visible="false" />
-                                    <Label text="2005" textFill="WHITE" visible="false" />
-                                    <Label text="3.4" textFill="WHITE" visible="false" />
+                                    <Label fx:id="TitleTopRated4" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearTopRated4" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingTopRated4" text="3.4" textFill="WHITE" visible="false" />
                                  </children>
                               </VBox>
                            </children>
                         </HBox>
-                        <Label text="Friends" textFill="#9a9a9a" VBox.vgrow="ALWAYS">
-                           <font>
-                              <Font size="18.0" />
-                           </font></Label>
-                        <HBox maxHeight="126.0" prefHeight="126.0" style="-fx-background-color: lightpink;" VBox.vgrow="ALWAYS">
-                           <VBox.margin>
-                              <Insets bottom="15.0" />
-                           </VBox.margin>
-                        </HBox>
-                        <Label text="Watch again" textFill="#9a9a9a" VBox.vgrow="ALWAYS">
+                        <Label text="Top movies picked for you" textFill="#9a9a9a" VBox.vgrow="ALWAYS">
                            <font>
                               <Font size="18.0" />
                            </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin></Label>
+                        <HBox maxHeight="126.0" prefHeight="126.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox fx:id="moviesForYou1" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="titleTopMoviesfy1" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearTopMoviesfy1" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingTopMoviesfy1" text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="moviesForYou2" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="titleTopMoviesfy2" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearTopMoviesfy2" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingTopMoviesfy2" text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="moviesForYou3" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="titleTopMoviesfy3" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearTopMoviesfy3" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingTopMoviesfy3" text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="moviesForYou4" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="titleTopMoviesfy4" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearTopMoviesfy4" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingTopMoviesfy4" text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label text="Similar users also liked" textFill="#9a9a9a" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
                         </Label>
-                        <HBox prefHeight="130.0" style="-fx-background-color: lightgreen;" VBox.vgrow="ALWAYS" />
+                        <HBox maxHeight="126.0" prefHeight="126.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox fx:id="similarUsers1" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="titleAlsoLiked1" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearAlsoLiked1" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingAlsoLiked1" text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="similarUsers2" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="titleAlsoLiked2" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearAlsoLiked2" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingAlsoLiked2" text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="similarUsers3" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="titleAlsoLiked3" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearAlsoLiked3" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingAlsoLiked3" text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="similarUsers4" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="titleAlsoLiked4" text="Title" textFill="WHITE" visible="false" />
+                                    <Label fx:id="yearAlsoLiked4" text="2005" textFill="WHITE" visible="false" />
+                                    <Label fx:id="ratingAlsoLiked4" text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                           </children></HBox>
                      </children>
                   </VBox>
                </content>
@@ -249,9 +315,6 @@
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
-         <padding>
-            <Insets left="20.0" right="20.0" />
-         </padding>
       </VBox>
    </center>
    <top>
@@ -308,9 +371,9 @@
                         <Image url="@../../../../Example_FXML/deafult_user.jpg" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="18.0" prefWidth="96.0" text="Some username" textFill="#9a9a9a">
+                  <Label fx:id="userLabel" prefHeight="18.0" prefWidth="96.0" text="Some username" textFill="#9a9a9a">
                      <HBox.margin>
-                        <Insets left="15.0" />
+                        <Insets left="30.0" right="20.0" />
                      </HBox.margin>
                   </Label>
                </children>
@@ -318,10 +381,115 @@
                   <Insets />
                </HBox.margin>
                <padding>
-                  <Insets right="50.0" />
+                  <Insets right="20.0" />
                </padding>
             </HBox>
          </children>
       </HBox>
    </top>
+   <right>
+      <VBox fillWidth="false" maxWidth="234.0" prefHeight="738.0" prefWidth="234.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="734.0" prefWidth="232.0" styleClass="primBG" vbarPolicy="NEVER">
+               <content>
+                  <VBox prefHeight="740.0" prefWidth="233.0" styleClass="primBG">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                     <children>
+                        <Label text="Most similar users" textFill="#9a9a9a">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="similarUser1" text="Label" textFill="#9a9a9a">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="similarUser2" text="Label" textFill="#9a9a9a">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="similarUser3" text="Label" textFill="#9a9a9a">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="similarUser4" text="Label" textFill="#9a9a9a">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="similarUser5" text="Label" textFill="#9a9a9a">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Example_FXML/deafult_user.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="similarUser6" text="Label" textFill="#9a9a9a">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children></VBox>
+   </right>
 </BorderPane>

@@ -35,7 +35,7 @@ public class AppModel {
 
         obsSimilarUsers.clear();
         obsSimilarUsers.addAll(logic.getTopSimilarUsers(user));
-        obsSimilarUsers.remove(4,obsSimilarUsers.size());
+        obsSimilarUsers.remove(6,obsSimilarUsers.size());
 
         obsTopMoviesSimilarUsers.clear();
         obsTopMoviesSimilarUsers.addAll(logic.getTopMoviesFromSimilarPeople(user));

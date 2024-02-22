@@ -31,8 +31,6 @@
     -fx-background-image: url("../../../../Example_FXML/Oppeheimer.jpg");
     -fx-background-repeat: none;
     -fx-background-position: center;
-    -fx-border-radius: 20px;
-    -fx-background-radius: 20px;
 }
 
 .backgroundEffect {

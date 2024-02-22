@@ -1,15 +1,27 @@
 package dk.easv.entities;
 
+import javafx.scene.layout.Background;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class TopMovie {
     private Movie movie;
     private List<Double> rawRatings;
+    private Background bg;
 
-    public TopMovie(Movie movie) {
+    public TopMovie(Movie movie, Background bg) {
         this.movie = movie;
         this.rawRatings = new ArrayList<>();
+        this.bg = bg;
+    }
+
+    public void setBg(Background bg) {
+        this.bg = bg;
+    }
+
+    public Background getBg() {
+        return bg;
     }
 
     public Movie getMovie() {
@@ -35,6 +47,8 @@ public class TopMovie {
     public int getYear(){
         return movie.getYear();
     }
+
+    public int getId(){return movie.getId();}
 
     public double getAverageRating(){
         double sum=0;
