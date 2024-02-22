@@ -11,15 +11,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane fx:id="borderPane" minWidth="940.0" prefHeight="837.0" prefWidth="1155.0" styleClass="primBG" stylesheets="@mian.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.presentation.controller.AppController">
    <left>
-      <VBox alignment="CENTER" prefHeight="668.0" prefWidth="180.0" spacing="10.0" styleClass="primBG" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="668.0" prefWidth="180.0" styleClass="primBG" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="668.0" prefWidth="200.0" styleClass="primBG" vbarPolicy="NEVER">
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="739.0" prefWidth="180.0" styleClass="primBG" vbarPolicy="NEVER">
                <content>
                   <VBox prefHeight="200.0" prefWidth="100.0">
                      <children>
@@ -44,7 +43,8 @@
                                           <Insets left="30.0" />
                                        </padding>
                                     </HBox>
-                                 </graphic></Button>
+                                 </graphic>
+                              </Button>
                               <Button alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefWidth="168.0" styleClass="coolBTN" textFill="#9a9a9a">
                                  <graphic>
                                     <HBox alignment="CENTER_LEFT" prefWidth="168.0" spacing="10.0">
@@ -63,7 +63,7 @@
                                     <HBox alignment="CENTER_LEFT" prefWidth="168.0" spacing="10.0">
                                        <children>
                                           <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" />
-                                          <Label text="Browser" textFill="#9a9a9a" />
+                                          <Label text="Coming soon" textFill="#9a9a9a" />
                                        </children>
                                        <padding>
                                           <Insets left="30.0" />
@@ -73,7 +73,7 @@
                               </Button>
                            </children>
                            <VBox.margin>
-                              <Insets top="20.0" />
+                              <Insets />
                            </VBox.margin>
                         </VBox>
                         <VBox prefHeight="116.0" prefWidth="170.0" spacing="20.0">
@@ -184,24 +184,52 @@
                               <Insets bottom="5.0" />
                            </VBox.margin>
                         </HBox>
-                        <Label text="Top Rated Movies" textFill="#9a9a9a" VBox.vgrow="ALWAYS" />
+                        <Label text="Top Rated Movies" textFill="#9a9a9a" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
                         <HBox maxHeight="126.0" prefHeight="126.0" prefWidth="934.0" spacing="10.0" VBox.vgrow="ALWAYS">
                            <VBox.margin>
                               <Insets bottom="15.0" />
                            </VBox.margin>
                            <children>
-                              <VBox fx:id="topRatedMovie1" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0">
+                              <VBox fx:id="topRatedMovie1" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0" styleClass="movieBoxes">
                                  <children>
                                     <Label fx:id="TitleTopRated1" text="Title" textFill="WHITE" visible="false" />
                                     <Label text="2005" textFill="WHITE" visible="false" />
                                     <Label text="3.4" textFill="WHITE" visible="false" />
                                  </children>
                               </VBox>
-                              <Pane fx:id="topRatedMovie3" prefHeight="126.0" prefWidth="224.0" />
-                              <Pane fx:id="topRatedMovie4" prefHeight="126.0" prefWidth="224.0" />
+                              <VBox fx:id="topRatedMovie2" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0" styleClass="movieBoxes">
+                                 <children>
+                                    <Label fx:id="TitleTopRated11" text="Title" textFill="WHITE" visible="false" />
+                                    <Label text="2005" textFill="WHITE" visible="false" />
+                                    <Label text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="topRatedMovie3" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0" styleClass="movieBoxes">
+                                 <children>
+                                    <Label fx:id="TitleTopRated12" text="Title" textFill="WHITE" visible="false" />
+                                    <Label text="2005" textFill="WHITE" visible="false" />
+                                    <Label text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="topRatedMovie4" alignment="CENTER" onMouseEntered="#changeBGDeafult" onMouseExited="#changeBGMovie" prefHeight="126.0" prefWidth="224.0" spacing="10.0" styleClass="movieBoxes">
+                                 <children>
+                                    <Label fx:id="TitleTopRated13" text="Title" textFill="WHITE" visible="false" />
+                                    <Label text="2005" textFill="WHITE" visible="false" />
+                                    <Label text="3.4" textFill="WHITE" visible="false" />
+                                 </children>
+                              </VBox>
                            </children>
                         </HBox>
-                        <Label text="Friends" textFill="#9a9a9a" VBox.vgrow="ALWAYS" />
+                        <Label text="Friends" textFill="#9a9a9a" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
                         <HBox maxHeight="126.0" prefHeight="126.0" style="-fx-background-color: lightpink;" VBox.vgrow="ALWAYS">
                            <VBox.margin>
                               <Insets bottom="15.0" />
@@ -209,7 +237,7 @@
                         </HBox>
                         <Label text="Watch again" textFill="#9a9a9a" VBox.vgrow="ALWAYS">
                            <font>
-                              <Font name="Avenir Black" size="15.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
                         <HBox prefHeight="130.0" style="-fx-background-color: lightgreen;" VBox.vgrow="ALWAYS" />

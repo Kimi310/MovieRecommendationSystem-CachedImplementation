@@ -18,15 +18,13 @@ import java.util.*;
 
 public class AppController implements Initializable {
     @FXML
-    private Pane topRatedMovie1;
+    private VBox topRatedMovie1;
     @FXML
-    private Pane topRatedMovie2;
+    private VBox topRatedMovie2;
     @FXML
-    private Pane topRatedMovie3;
+    private VBox topRatedMovie3;
     @FXML
-    private Pane topRatedMovie4;
-    @FXML
-    private Pane topRatedMovie5;
+    private VBox topRatedMovie4;
     @FXML
     private ObservableList<Movie> lvTopForUser;
     @FXML
@@ -65,6 +63,7 @@ public class AppController implements Initializable {
         lvTopSimilarUsers=model.getObsSimilarUsers();
         lvTopFromSimilar=model.getObsTopMoviesSimilarUsers();
         setTopForUser();
+        setTopNotSeen();
         startTimer("Load users");
         model.loadUsers();
         stopTimer();
@@ -72,11 +71,18 @@ public class AppController implements Initializable {
 
     private void setTopForUser(){
         for (Movie m: lvTopForUser) {
-            System.out.println(m.getTitle());
-            m.setBg(new Background(new BackgroundImage(new Image("Example_FXML/"+m.getTitle()+".jpg"),null,null,null,bgSize)));
-            break;
+            m.setBg(new Background(new BackgroundImage(new Image("Example_FXML/"+m.getId()+".jpg"),null,null,null,bgSize)));
         }
-        topRatedMovie1.setBackground(model.getObsTopMovieSeen().get(0).getBg());
+        topRatedMovie1.setBackground(lvTopForUser.get(0).getBg());
+        topRatedMovie2.setBackground(lvTopForUser.get(1).getBg());
+        topRatedMovie3.setBackground(lvTopForUser.get(2).getBg());
+        topRatedMovie4.setBackground(lvTopForUser.get(3).getBg());
+    }
+
+    private void setTopNotSeen(){
+        for (Movie m:lvTopAvgNotSeen) {
+            System.out.println(m.getId());
+        }
     }
 
     public void changeBGDeafult(MouseEvent mouseEvent) {

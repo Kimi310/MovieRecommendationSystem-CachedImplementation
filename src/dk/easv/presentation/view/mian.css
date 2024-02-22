@@ -63,3 +63,8 @@
     -fx-border-color: #212229;
     -fx-border-style: solid;
 }
+
+.movieBoxes{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
